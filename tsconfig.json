@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "shared-comp": [
+        "dist/shared-comp"
+      ],
+      "shared-comp/*": [
+        "dist/shared-comp/*"
+      ]
+    }
   }
 }
