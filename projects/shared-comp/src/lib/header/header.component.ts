@@ -8,7 +8,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Input() buttonText = 'action';
   @Input() buttonVisible = false;
-  @Input() signInButtonVisible = true;
+  @Input() signInButtonVisible = false;
+  @Input() links: Record<string, string> = {};
+  @Input() title = 'Header';
   @Output() clicked = new EventEmitter<any>();
   @Output() logedIn = new EventEmitter<any>();
 
