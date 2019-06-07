@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { HeaderLink } from '../../models/headerLink';
 
 @Component({
   selector: 'lib-header',
@@ -9,7 +10,7 @@ export class HeaderComponent implements OnInit {
   @Input() buttonText = 'action';
   @Input() buttonVisible = false;
   @Input() signInButtonVisible = false;
-  @Input() links: Record<string, string> = {};
+  @Input() links: HeaderLink[] = [];
   @Input() title = 'Header';
   @Output() clicked = new EventEmitter<any>();
   @Output() logedIn = new EventEmitter<any>();
