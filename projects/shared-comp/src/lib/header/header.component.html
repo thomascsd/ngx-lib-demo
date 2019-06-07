@@ -9,6 +9,7 @@
   </div>
   <div class="topbar-right">
     <a
+      id="signIn"
       *ngIf="signInButtonVisible"
       class="btn btn-sm btn-primary mr-4"
       (click)="onLogedIn($event)"
@@ -16,11 +17,12 @@
       >Sign in</a
     >
     <a
-      *ngIf="buttonVisible"
+      id="actionBtn"
+      *ngIf="actionButtonVisible"
       class="btn btn-sm btn-outline btn-primary hidden-sm-down"
       href="#"
       (click)="onclick($event)"
-      >{{ buttonText }}</a
+      >{{ actionButtonText }}</a
     >
   </div>
 </nav>

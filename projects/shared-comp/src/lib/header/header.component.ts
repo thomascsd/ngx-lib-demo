@@ -7,8 +7,8 @@ import { HeaderLink } from '../../models/headerLink';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() buttonText = 'action';
-  @Input() buttonVisible = false;
+  @Input() actionButtonText = 'action';
+  @Input() actionButtonVisible = false;
   @Input() signInButtonVisible = false;
   @Input() links: HeaderLink[] = [];
   @Input() title = 'Header';

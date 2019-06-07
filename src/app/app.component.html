@@ -1,2 +1,6 @@
-<lib-header></lib-header>
-<div>Hello</div>
+<lib-header [title]="title" [links]="links"></lib-header>
+<lib-header [title]="title" [links]="links" [signInButtonVisible]="true"></lib-header>
+<lib-header [title]="title" [links]="links" [actionButtonVisible]="true"></lib-header>
+
+<router-outlet></router-outlet>
+<lib-footer></lib-footer>

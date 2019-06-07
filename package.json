@@ -7,7 +7,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test:lib": "ng test --project=shared-comp",
+    "build:lib": "ng build shared-comp"
   },
   "private": true,
   "dependencies": {
