@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:lib": "ng test --project=shared-comp",
-    "build:lib": "ng build shared-comp"
+    "build:lib": "ng build shared-comp",
+    "build:lib-prod": "ng build shared-comp && cpy './README.md' './dist/'",
+    "deploy": "cd dist/shared-comp && npm publish --access public"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +39,7 @@
     "@types/jasminewd2": "~2.0.6",
     "@types/node": "~12.0.5",
     "codelyzer": "^5.0.1",
+    "cpy-cli": "^2.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

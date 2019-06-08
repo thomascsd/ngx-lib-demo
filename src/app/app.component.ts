@@ -14,4 +14,12 @@ export class AppComponent implements OnInit {
     this.title = 'ngx-lib-demo';
     this.links = [{ title: 'home', path: '/home' }, { title: 'links', path: '/links' }];
   }
+
+  Login() {
+    alert('login');
+  }
+
+  doAction() {
+    alert('action');
+  }
 }
